@@ -7,7 +7,21 @@ const myPromise = new Promise((resolve, reject) => {
   }
 });
 
-myPromise
-  .then((res) => console.log(res))
-  .catch((err) => console.log(err))
-  .finally(() => console.log("Done!"));
+// myPromise
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log("Done!"));
+
+  // if i do async and await
+
+  const myPromise2 = async ()=>{
+    try{
+      const result = await myPromise;
+      console.log(result)
+    }catch(err){
+      console.log(err)
+    }finally{
+      console.log("Done")
+    }
+  }
+  myPromise2()

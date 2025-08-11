@@ -154,19 +154,28 @@
 
 
 
-function outerFunction() {
-  let count = 0; // This is a local variable of outerFunction
-  function innerFunction() {
-    count++;
-    console.log("Count is: " + count);
-  }
-  return innerFunction;
+// function outerFunction() {
+//   let count = 0; // This is a local variable of outerFunction
+//   function innerFunction() {
+//     count++;
+//     console.log("Count is: " + count);
+//   }
+//   return innerFunction;
+// }
+
+// const counter = outerFunction();
+// console.log("suu")
+// console.log(counter);
+
+// counter(); // Output: Count is: 1
+// counter(); // Output: Count is: 2
+// counter(); // Output: Count is: 3
+
+function one() {
+  console.log('One');
+  two();
 }
-
-const counter = outerFunction();
-console.log("suu")
-console.log(counter);
-
-counter(); // Output: Count is: 1
-counter(); // Output: Count is: 2
-counter(); // Output: Count is: 3
+function two() {
+  console.log('Two');
+}
+one();
