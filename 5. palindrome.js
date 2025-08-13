@@ -9,4 +9,4 @@ function checkPalindram(a) {
 }
 
 a = "madam";
-console.log(checkPalindram(a));
+console.log(checkPalindram(a)); //Palindram

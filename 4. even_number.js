@@ -6,4 +6,4 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 
-console.log(even_number);
+console.log(even_number); //[ 2, 4, 6, 8, 10 ] positive even number
