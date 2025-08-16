@@ -3,15 +3,15 @@ const findLargestElement = (array) => {
   // console.log(max)
   const findMax = (arr) => {
     for (let item of arr) {
-      console.log(item);
-      if(Array.from(item)){
+      // console.log(item);
+      if(Array.isArray(item)){
         findMax(item)
       }else{
-        if(item > max){ dgewgw
+        if(item > max){
           max = item;
         }
       }
-    } if
+    }
   };
   findMax(array)
   return max;
