@@ -171,11 +171,11 @@
 // counter(); // Output: Count is: 2
 // counter(); // Output: Count is: 3
 
-function one() {
-  console.log('One');
-  two();
-}
-function two() {
-  console.log('Two');
-}
-one();
+// function one() {
+//   console.log('One');
+//   two();
+// }
+// function two() {
+//   console.log('Two');
+// }
+// one();

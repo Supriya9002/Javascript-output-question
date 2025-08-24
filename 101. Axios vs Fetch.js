@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// // fetch
+// fetch
 // const ProductData = fetch("https://dummyjson.com/products")
 // .then(response => {
 //     if (!response.ok) throw new Error('Network error');

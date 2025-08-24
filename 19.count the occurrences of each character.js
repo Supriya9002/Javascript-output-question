@@ -5,7 +5,8 @@ function countCharacters(str) {
   for (let i = 0; i < str.length; i++) {
     let present = str[i] in result;
     if (present) {
-      // result.str[i] += 1; // is wrong because JavaScript thinks you are looking for a property named str inside result. But result has no property str.
+      // result.str[i] += 1; // is wrong because JavaScript thinks you are looking for a property named str inside result. 
+      // But result has no property str.
       result[str[i]] += 1; // ✅ Correct
     } else {
       result[str[i]] = 1;
