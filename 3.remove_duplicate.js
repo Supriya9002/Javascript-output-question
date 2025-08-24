@@ -18,7 +18,7 @@
 const a = [2, 2, 8, 4, 5, 9, 2, 8, 9];
 
 const unique = a.filter((value, index) => a.indexOf(value) === index);
-console.log(unique);
+console.log(unique); //2, 8,4,5,9,
 console.log(a.indexOf(2));
 
 
