@@ -15,10 +15,10 @@
 
 // using filter
 
-const a = [2, 2, 8, 4, 5, 9, 2, 8, 9];
+const a = [1, 2, 2, 3, 4, 4, 5]  
 
 const unique = a.filter((value, index) => a.indexOf(value) === index);
 console.log(unique); //2, 8,4,5,9,
-console.log(a.indexOf(2));
+// console.log(a.indexOf(2));
 
 

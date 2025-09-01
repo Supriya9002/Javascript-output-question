@@ -19,5 +19,9 @@ const findMax = (arr) => {
 };
 
 // Example usage:
-const numbers = [1, 6, -33, 9, 4, 8, 2];
+const numbers = [2, 8, 5, 1, 10, 3]
 console.log("Maximum number is:", findMax(numbers));
+
+console.log("Alternative APPROCH")
+console.log("Maximum",Math.max(...numbers))
+console.log("Maximum",Math.max([1,2,3]))
