@@ -18,7 +18,7 @@
 // start → index to start changes.
 // deleteCount → number of elements to remove.
 // item1, item2, ... → optional items to insert.
- rem
+//  rem
 // remove
 // let arr = [1, 2, 3, 4];
 // let afterSlice = arr.splice(2)// 3, 4
