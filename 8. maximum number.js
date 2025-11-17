@@ -11,7 +11,8 @@ const findMax = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
       max = arr[i];
-    } else if (arr[i] < min) {
+    }
+    if (arr[i] < min) {
       min = arr[i];
     }
   }
@@ -19,9 +20,9 @@ const findMax = (arr) => {
 };
 
 // Example usage:
-const numbers = [2, 8, 5, 1, 10, 3]
+const numbers = [1, 4];
 console.log("Maximum number is:", findMax(numbers));
 
-console.log("Alternative APPROCH")
-console.log("Maximum",Math.max(...numbers))
-console.log("Maximum",Math.max([1,2,3]))
+console.log("Alternative APPROCH");
+console.log("Maximum", Math.max(...numbers));
+console.log("Maximum", Math.max([1, 2, 3]));
