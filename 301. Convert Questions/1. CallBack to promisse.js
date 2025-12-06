@@ -10,14 +10,16 @@ function getData(callback) {
 function getData1() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Data Recived");
+      // resolve("Data received");
+      reject('errorrrrrr')
     }, 1000);
   });
 }
+
 getData1()
   .then((result) => {
     console.log(result);
   })
   .catch((err) => {
-    console.log(err);
+    console.log("Problem come", err);
   });
