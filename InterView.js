@@ -27,6 +27,14 @@
 // }
 
 // spard operator
-const arr1 = [1, 2];
-const arr2 = [...arr1, 4, 5];
-console.log(arr2);
+// const arr1 = [1, 2];
+// const arr2 = [...arr1, 4, 5];
+// console.log(arr2);
+
+function person(){
+    this.name = "Suuuu"
+}
+
+person.prototype.age = 20;
+let std = new person()
+console.log(std.age)
