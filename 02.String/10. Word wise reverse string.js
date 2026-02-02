@@ -3,20 +3,19 @@ function reverseWords(str) {
   let word = "";
 
   // Traverse from end
-  for (let i = str.length - 1; i >= 0; i--) {
-    if (str[i] !== " ") {
-      word = str[i] + word;
+  for (let s of str) {
+    if (s !== " ") {
+      word += s;
     } else {
-      result = word + " ";
+      result = word + " " + result;
       word = "";
     }
   }
   //   console.log(result);
 
   // Add the first word
-  result += word;
+  result = word + " " + result;
   return result;
 }
 
 console.log(reverseWords("welcome to earth"));
-console.log("1" + "1");

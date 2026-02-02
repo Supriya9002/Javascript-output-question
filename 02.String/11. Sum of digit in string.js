@@ -1,34 +1,20 @@
-// function sumOfDigit(str) {
-//   let sumOfnumber = 0;
-//   for (let i = 0; i < str.length; i++) {
-//     if (str[i] >= 0 && str[i] <= 9) {
-//       sumOfnumber += Number(str[i]);
-//     }
-//   }
-//   console.log(sumOfnumber);
-// }
-
-// sumOfDigit("aas1fg23k1");
-
 function sumofNumberString(str) {
-  let sum = 0;
-  let sumofDigit = 0;
-  let sumofNumber = "";
-
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] >= "0" && str[i] <= "9") {
-      sumofNumber += str[i];
-      sumofDigit += Number(str[i]);
+  let number = 0,
+    sumofdigit = 0,
+    sumofnumber = 0;
+  for (let s of str) {
+    if (s >= 0 && s <= 9) {
+      sumofdigit += Number(s);
+      number += s;
     } else {
-      if (sumofNumber !== "") {
-        sum = Number(sumofNumber) + sum;
-        sumofNumber = "";
+      if (number) {
+        // console.log(number)
+        sumofnumber += Number(number);
+        number = "";
       }
     }
   }
-  if (sumofNumber !== "") {
-    sum = Number(sumofNumber) + sum;
-  }
-  console.log({ sumofDigit, sum });
+  sumofnumber += Number(number);
+  return { sumofdigit, sumofnumber };
 }
-sumofNumberString("a23d1c2");
+console.log(sumofNumberString("a23d1c2"));

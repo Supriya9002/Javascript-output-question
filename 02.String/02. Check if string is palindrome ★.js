@@ -8,3 +8,16 @@ const checkPalindram = (str)=>{
 }
 
 console.log(checkPalindram("aba"))
+
+// approch 2
+function checkPalindram2(str){
+    let i=0, j=str.length-1;
+    while(i<=j){
+        if(str[i]!==str[j]){
+            return false
+        }
+        i++,j--;
+    }
+    return true;
+}
+console.log(checkPalindram2("abv"))
